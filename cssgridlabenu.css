@@ -1,0 +1,141 @@
+html,body{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    background:rgb(89 95 150);
+    grid-template-rows: 6vh 76vh 18vh;
+    grid-template-areas: "h" "m" "f";
+    font-family:  'Roboto', sans-serif;
+}
+
+header{
+    background: rgb(205 77 0);
+}
+
+.titulo-labenu{
+    text-align:center;
+    font-size: 3vh;
+    font-weight: bold;
+    color:white;
+    margin-top: 2vh;
+}
+
+.container-img{
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    max-width: 980px;
+    height: auto;
+    margin: 7vh auto;
+}
+
+.container-labenu{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.container-labenu li{
+    margin: 1vh 2vh;
+    font-size: 5vh;
+    text-align: center;
+    padding: 3vh 2vh;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius:4%;
+}
+
+.mobile{
+    background: #94c47d;
+}
+
+.data{
+    background:#e06666 ;
+}
+
+.web{
+    background:#6d9eeb ;
+}
+
+p{
+    font-size: 3vh;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 18vh;
+    margin: 1vh
+}   
+
+footer{
+    background: rgb(216 216 216);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.email{
+    height: 5vh;
+    width: 48vh;
+    margin: auto 0;
+    border-radius:4%;
+    border: none;
+}
+
+.enviar{
+    height: 6vh;
+    width: 12vh;
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 3vh;
+    background: #cd4d00;
+    color: white;
+    border-radius:4%;
+    border: none;
+}
+
+/* media queries */
+
+@media (max-width: 494px) {
+    .container-labenu li{
+        margin: 1vh 1vh;
+        font-size: 4vh;
+        padding: 3vh 1vh;
+    }
+}
+
+@media (max-width: 466px){
+    .email {
+        width: 26vh;
+    }
+}
+
+
+@media (max-width: 379px) {
+    .container-labenu li{
+        margin: 1vh 1vh;
+        font-size: 4vh;
+        padding: 3vh 1vh;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 80%;
+}    
+.container-labenu li{
+        margin: 1vh 1vh;
+        font-size: 4vh;
+        padding: 3vh 1vh;
+    }
+}
+
+
+
+
